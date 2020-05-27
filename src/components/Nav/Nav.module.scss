@@ -1,0 +1,30 @@
+nav{
+    color:rgb(117, 135, 175);
+    font-family:Open Sans;
+    width:100%;
+    position:absolute;
+    z-index:1;
+
+    ul{
+        margin:auto;
+        text-align:center;
+    }
+
+li{
+    display:inline-block;
+    padding:10px;
+    color:white;
+    font-size:10pt;
+    font-weight:100;
+    text-decoration:none;
+    :visited{
+        color:white;
+    }
+    :hover{
+        color:rgba(255, 255, 255, 0.61);
+    }
+    a{
+        text-decoration:none;
+    }
+}
+}
