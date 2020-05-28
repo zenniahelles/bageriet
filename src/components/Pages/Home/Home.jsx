@@ -14,7 +14,7 @@ function myAlert() {
 }
 
     return (
-     <div>
+     <div className="Home">
 
          <section className="slider">
              <Slider />

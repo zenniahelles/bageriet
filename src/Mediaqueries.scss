@@ -1,12 +1,11 @@
 @media only screen and (max-width: 900px) {
-    .slider{
+.slider{
         margin-top:30px;
     }
-    header{
+header{
         position:static;
         color:#324049;
     }
-
 nav{
     li{
         color:#324049;
@@ -14,6 +13,17 @@ nav{
             color:#324049;
         }
     }
+
+}
+
+.Produkter{
+    margin-top :100px;
+.Banner{
+    opacity:0.6;
+    position: absolute;
+    top:0;
+    z-index:-1;
+}
 }
 
 .Home_nyhedsbrev__23Aaq{
@@ -38,11 +48,23 @@ figcaption{
 }
 }
 
+.Produkter{
+    .Indhold{
+        grid-template-columns: auto;
+    }
+}
+
 .Nyeste{
     margin-bottom:50%;
     .nyesteGrid{
         grid-template-columns: 1fr 1fr;
     }
+}
+
+.Produkter{
+.breadGrid{
+    grid-template-columns: auto auto;
+}
 }
 
 .sliderTitle{
@@ -56,6 +78,22 @@ figcaption{
     .Nyeste{
         margin-bottom:110%;
         .nyesteGrid{
+            grid-template-columns: 1fr;
+            max-width:90%;
+            grid-gap:2%;
+            p{
+             margin-top:5px;
+             padding-bottom:0;
+            }
+            button{
+                margin-top:0;
+            }
+        }
+    }
+
+    .Produkter{
+        margin-bottom:40%;
+        .breadGrid{
             grid-template-columns: 1fr;
             max-width:90%;
             grid-gap:2%;

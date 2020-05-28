@@ -1,44 +1,22 @@
 import React, { useState, useEffect } from 'react';
+import './Produkter.scss';
+import Kategorier from "./Kategorier/Kategorier";
+import Bread from "./Bread/Bread";
 
-export default function Categories(props) {
-
-    const [apiData, setApiData] = useState(null);
-
-    async function getCategory() {
-        const fetchHeaders = new Headers();
-        fetchHeaders.append('Accept', 'application/json');
-        try {
-            console.log(apiData)
-            const request = await fetch('https://api.mediehuset.net/bakeonline/products', { headers: fetchHeaders });
-            const response = await request.json();
-            console.log(response);
-            setApiData(response.products);
-        } catch (error) {
-            console.log('getCategory -> Error', error);
-        }
-    }
-
-    useEffect(() => {
-        getCategory()
-    }, [])
+export default function Produkter(props) {
 
     return (
-        <div>
-            <h2>Categories</h2>
-            <section>
-{/*indsæt .slice(0,5) efter apiData og før map for at bestemme hvor mange film skal vises. Her er det 5.*/}
-                {
-                    apiData && apiData.length > 0 && apiData.slice(0,8).map((item, i) =>
-                        <div key={item.title}>
-                            <img src={item.image.fullpath} />
-                            <h3>{item.title}</h3>
-                            <p>{item.teaser}</p>
-                            <br />
-                        </div>
-                    )
-                }
-
+        <div className="Produkter">
+            <div className="Banner"></div>
+            <section className="ProductTitle"><h2>Vores elskede bagværk</h2>
+            <p>Der er mange tilgængelige udgaver af Lorem Ipsum, men de fleste udgaver har gennemgået forandringer, når nogen har tilføjet humor eller tilfældige ord, som på ingen måde ser ægte ud</p>
             </section>
-        </div>
+
+            <section className="Indhold">
+            <div className="breadMenu"><Kategorier /></div>
+            <Bread />
+        </section>
+
+    </div>
     )
 }
