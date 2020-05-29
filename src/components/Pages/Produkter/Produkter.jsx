@@ -16,7 +16,6 @@ export default function Produkter(props) {
             <div className="breadMenu"><Kategorier /></div>
             <Bread />
         </section>
-
     </div>
     )
 }

@@ -25,10 +25,9 @@ export default function Kategorier(props) {
     return (
             <div>
                 {
-                    apiData && apiData.length > 0 && apiData.slice(0, 8).map((item, i) =>
-                    <div key={item.title}>
+                    apiData && apiData.length > 0 && apiData.map((item, i) =>
+                    <div className="categoryName" key={item.title}>
                         <h3>{item.title}</h3>
-                        <br />
                     </div>
                     )
                 }

@@ -1,80 +1,129 @@
+// FRA 900 OG NEDEFTER --------------------////////////////
+
 @media only screen and (max-width: 900px) {
-.slider{
-        margin-top:30px;
-    }
+// HEADER AND NAVIGATION ---------------------------------
 header{
         position:static;
         color:#324049;
     }
 nav{
+    position:static;
+
+    .Nav_logolink__3dHoc{
+        padding: 15px 2% 0 2%;
+    }
+
     li{
         color:#324049;
         :visited{
             color:#324049;
+
+            .Nav_linklogo__13FdE{
+                color:#324049;
+            }
         }
     }
 
 }
 
+// FORSIDE ------------------------------------------------
+.slider{
+    margin-top:10px;
+}
+
+.Home_nyhedsbrev__23Aaq{
+    input{
+        width:60%;
+    }
+    button{
+        width:20%;
+        min-width:80px;
+    }
+    }
+    
+    .Home_firstSection__2JhQy{
+        .Home_imageGrid__2Wrmz{
+        grid-gap:0px;
+        padding-bottom:8%;
+    }
+    figcaption{
+        p{
+            padding:15px 15px;
+        }
+    }
+    }
+    
+    .Nyeste{
+        margin-bottom:50%;
+        .nyesteGrid{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    .sliderTitle{
+        font-size:7vw;
+    }
+
+// PRODUKTER UNDERSIDE ------------------------------------
+
 .Produkter{
     margin-top :100px;
+    margin-bottom:18%;
 .Banner{
     opacity:0.6;
     position: absolute;
     top:0;
+    height:120px;
     z-index:-1;
 }
+.Indhold{
+    grid-gap:1%;
+    grid-template-columns: auto;
 }
-
-.Home_nyhedsbrev__23Aaq{
-input{
-    width:60%;
-}
-button{
-    width:20%;
-    min-width:80px;
-}
-}
-
-.Home_firstSection__2JhQy{
-    .Home_imageGrid__2Wrmz{
-    grid-gap:0px;
-    padding-bottom:8%;
-}
-figcaption{
-    p{
-        padding:15px 15px;
-    }
-}
-}
-
-.Produkter{
-    .Indhold{
-        grid-template-columns: auto;
-    }
-}
-
-.Nyeste{
-    margin-bottom:50%;
-    .nyesteGrid{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-.Produkter{
 .breadGrid{
     grid-template-columns: auto auto;
 }
+
+.breadMenu{
+    text-align:center;
+    padding-bottom:1%;
+}
+.categoryName{
+    display:inline-block;
+    padding:0 10px 0 10px;
+}
+}
+// CONTACT UNDERSIDE ------------------------------------
+.Contact{
+    margin-top :100px;
+    margin-bottom:18%;
+    .Banner{
+        opacity:0.6;
+        position: absolute;
+        top:0;
+        z-index:-1;
+    }
+}
 }
 
-.sliderTitle{
-    font-size:7vw;
+//FRA 768 OG NEDEFTER ---------------------////////////////
+
+@media only screen and (max-width: 768px) {
+.Contact{
+    .kontaktIndhold{
+        width:80%;
+        .kontaktGrid{
+            grid-template-columns: 1fr;
+        }
+    }
+}
 }
 
-}
 
+// FRA 610 OG NEDEFTER --------------------////////////////
 
 @media only screen and (max-width: 610px) {
+// FORSIDE ------------------------------------------------
     .Nyeste{
         margin-bottom:110%;
         .nyesteGrid{
@@ -91,8 +140,27 @@ figcaption{
         }
     }
 
+.sliderTitle{
+        font-size:7vw;
+    }
+
+.Home_firstSection__2JhQy{
+        .Home_imageGrid__2Wrmz{
+        grid-template-columns: 1fr;
+        img{
+            width:40%;
+            max-width:300px;
+        }
+        figcaption{
+            padding-bottom:30px;
+        }
+    }
+}
+
+// PRODUKTER UNDERSIDE ------------------------------------
+
     .Produkter{
-        margin-bottom:40%;
+        margin-bottom:50%;
         .breadGrid{
             grid-template-columns: 1fr;
             max-width:90%;
@@ -104,23 +172,6 @@ figcaption{
             button{
                 margin-top:0;
             }
-        }
-    }
-
-    .sliderTitle{
-        font-size:7vw;
-    }
-
-    .Home_firstSection__2JhQy{
-        .Home_imageGrid__2Wrmz{
-        grid-template-columns: 1fr;
-        img{
-            width:40%;
-            max-width:300px;
-        }
-        figcaption{
-            padding-bottom:30px;
-        }
         }
     }
 }

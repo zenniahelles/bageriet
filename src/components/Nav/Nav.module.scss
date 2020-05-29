@@ -10,6 +10,10 @@ nav{
         text-align:center;
     }
 
+.logolink{
+    padding: 10px 15px 0 15px;
+}
+
 li{
     display:inline-block;
     padding:10px;
@@ -25,6 +29,16 @@ li{
     }
     a{
         text-decoration:none;
+    }
+
+    .linklogo{
+        color:white;
+        text-align:center;
+        font-family:Lobster;
+        font-size:4.3vw;
+        h1{
+            font-weight:normal;
+        }
     }
 }
 }
