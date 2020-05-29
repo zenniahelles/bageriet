@@ -1,5 +1,5 @@
 import Home from '../Pages/Home/Home';
-import About from '../Pages/About/About';
+import Login from '../Pages/Login/Login';
 import Contact from '../Pages/Contact/Contact';
 import Produkter from '../Pages/Produkter/Produkter';
 
@@ -26,7 +26,7 @@ const routes = [
     name: 'LOGIN',
     path: '/Login',
     exact: true,
-    component: About
+    component: Login
 }
 ];
 
